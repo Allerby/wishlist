@@ -1,0 +1,30 @@
+<div data-behavior="vue">
+  <app
+    inline-template
+    :presents="<%= @presents.to_json %>"
+    >
+    <div>
+      <h1 class="font-sans text-6xl text-center my-10 subpixel-antialiased tracking-wider">Wishlist</h1>
+      <vue-form
+        v-slot="formProps"
+        class="md:max-w-3xl flex justify-center mx-auto mb-8" 
+        :form-url="<%= presents_path.to_json %>"
+        :form-action=<%= "POST".to_json %>
+        :submit-action="getImage"
+        :on-success="addPresent"
+      >
+        <div class="w-full">
+          <input 
+            v-model="formProps.model.name"
+            class="block w-full px-4 py-3 mb-8 text-base appearance-none border-b border-gray-300 shadow-none bg-white placeholder-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300"
+            placeholder="Search">
+          </input>
+        </div>
+      </vue-form>
+
+      <div>
+        <presents :presents="allPresents" :placeholder="'<%= asset_path('xbox') %>'"></presents>
+      </div>
+    </div>
+  </app>
+</div>

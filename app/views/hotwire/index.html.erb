@@ -1,0 +1,5 @@
+<%= turbo_stream_from @presents %>
+
+<%= turbo_frame_tag "presents" do %>
+  <%= render @presents %>
+<% end %>

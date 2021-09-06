@@ -1,0 +1,25 @@
+{
+  "name": "wishlist",
+  "private": true,
+  "dependencies": {
+    "@hotwired/turbo": "^7.0.0-beta.2",
+    "@hotwired/turbo-rails": "^7.0.0-beta.3",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.2.1",
+    "lodash": "^4.17.20",
+    "tailwindcss": "^2.0.2",
+    "turbolinks": "^5.2.0",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.5",
+    "vue-resource": "^1.5.1",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
